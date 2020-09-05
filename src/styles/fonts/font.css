@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H Black'), local('MazzardH-Black'),
+        url('MazzardH-Black.woff2') format('woff2'),
+        url('MazzardH-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H Bold'), local('MazzardH-Bold'),
+        url('MazzardH-Bold.woff2') format('woff2'),
+        url('MazzardH-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H Black Italic'), local('MazzardH-BlackItalic'),
+        url('MazzardH-BlackItalic.woff2') format('woff2'),
+        url('MazzardH-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H Bold Italic'), local('MazzardH-BoldItalic'),
+        url('MazzardH-BoldItalic.woff2') format('woff2'),
+        url('MazzardH-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H ExtraBold'), local('MazzardH-ExtraBold'),
+        url('MazzardH-ExtraBold.woff2') format('woff2'),
+        url('MazzardH-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H ExtraLight'), local('MazzardH-ExtraLight'),
+        url('MazzardH-ExtraLight.woff2') format('woff2'),
+        url('MazzardH-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: local('Mazzard H ExtraBold Italic'), local('MazzardH-ExtraBoldItalic'),
+        url('MazzardH-ExtraBoldItalic.woff2') format('woff2'),
+        url('MazzardH-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
