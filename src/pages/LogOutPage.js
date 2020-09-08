@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import Button from '@material-ui/core/Button'
 // Firebase App (the core Firebase SDK) is always required and must be listed first

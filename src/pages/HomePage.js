@@ -1,12 +1,14 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { AuthContext } from '../AuthProvider';
-import Button from '@material-ui/core/Button'
-import { Link } from "react-router-dom";
+
+
 import MButton from '../components/MButton';
+
+
+import RandExp from 'randexp';
 import * as firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/database";
-import RandExp from 'randexp';
 
 import { useHistory } from "react-router-dom";
 
@@ -24,8 +26,13 @@ const HomePage = () => {
                 ownerId: user.uid,
             }),
             firebase.database().ref('rooms/' + randomId).set({
-                ownerId: user.uid,
-                connectedMembers: []
+                // host: user.uid,
+                host: {
+                    [user.uid]: {
+                        state: 'online',
+                        last_changed: firebase.database.ServerValue.TIMESTAMP,
+                    }
+                }
             })
         ]);
 

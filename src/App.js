@@ -4,13 +4,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+
+// My Pages
 import SignInPage from './pages/SignInPage'
 import HomePage from './pages/HomePage'
 import PrivateRoute from './PrivateRoute'
 import LogOutPage from './pages/LogOutPage'
 import RoomPage from './pages/RoomPage'
-import ClassRoomPage from './pages/ClassRoomPage'
+
+// My Auth Provider
 import { AuthProvider } from './AuthProvider'
+
+
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 import * as firebase from "firebase/app";
 
@@ -27,9 +32,6 @@ const firebaseConfig = {
   messagingSenderId: "377295034265",
   appId: "1:377295034265:web:d9f56f00184044f9c06508"
 };
-// import logo from './logo.svg';
-// import './App.css';
-
 function App() {
 
   firebase.initializeApp(firebaseConfig);

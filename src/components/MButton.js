@@ -1,7 +1,9 @@
 import React from 'react'
-import '../styles/fonts/font.css'
 import styled from 'styled-components'
-import AppleIcon from '@material-ui/icons/Apple';
+
+import '../styles/fonts/font.css'
+
+
 import Icon from "@mdi/react";
 
 

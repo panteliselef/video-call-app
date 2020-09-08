@@ -1,14 +1,14 @@
 import React, { useState, useContext } from "react";
+import { useHistory, Redirect } from "react-router-dom";
 import { AuthContext } from '../AuthProvider';
-import { useHistory } from "react-router-dom";
-import { Button, Container, TextField, Icon } from '@material-ui/core'
-import { Route, Redirect } from "react-router-dom";
+
+
+import Grid from '@material-ui/core/Grid';
+import { Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import AppleIcon from '@material-ui/icons/Apple';
+
 import MButton from '../components/MButton';
 import MInputText from '../components/MInputText';
-import DeleteRoundedIcon from '@material-ui/icons/DeleteRounded';
-import Grid from '@material-ui/core/Grid';
 
 import { mdiGoogle } from '@mdi/js';
 // Firebase App (the core Firebase SDK) is always required and must be listed first
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const SignInPage = () => {
-    const db = firebase.firestore();
+    // const db = firebase.firestore();
     const authContext = useContext(AuthContext);
     const history = useHistory();
 
@@ -55,19 +55,19 @@ const SignInPage = () => {
             var token = result.credential.accessToken;
             // The signed-in user info.
             var user = result.user;
-            var dbUser = db.collection('users').doc(user.uid).set({email: user.email});
+            // var dbUser = db.collection('users').doc(user.uid).set({email: user.email});
             authContext.setUser(result);
             history.push("/");
             console.log(token, user)
             // ...
         }).catch(function (error) {
             // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
+            // var errorCode = error.code;
+            // var errorMessage = error.message;
             // The email of the user's account used.
-            var email = error.email;
+            // var email = error.email;
             // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
+            // var credential = error.credential;
             // ...
             console.error(error);
         });
